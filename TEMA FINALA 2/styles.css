@@ -1,0 +1,206 @@
+:root {
+  --grey1: #dbd8d8;
+  --black: #030d01;
+  --green: #4caf50;
+  --white: #fff;
+  --grey2: #ddd;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20;
+  background-color: var(--white);
+  text-align: center;
+}
+
+nav {
+  background-color: rgba(30, 5, 56, 0.9);
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+#logo {
+  width: 60px;
+  height: auto;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 1em;
+  margin: 0 1em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1f5579;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://blog.hotelguru.ro/wp-content/uploads/2020/01/shutterstock_762811789.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  position: relative;
+  color: #333;
+}
+
+.card {
+  max-width: 540px;
+  text-align: center;
+  background-color: var(--white);
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.2em;
+}
+
+section {
+  padding: 2em;
+}
+
+#info {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#moeciu-img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#info-li {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#info-li h3 {
+  color: #007bff;
+  text-align: center;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.cabin-card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.cabin-card .card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-inner img {
+  max-width: 90%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.form-container {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 30em;
+}
+
+label {
+  margin-bottom: 3px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: var(--green);
+  color: rgb(240, 245, 237);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: auto;
+}
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 1em;
+  bottom: 0;
+  width: 100%;
+}
+
+.cabin-card h3 {
+  color: #333;
+}
+
+
+
+#info p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: var(--black);
+}
+#info {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 1em 0;
+  }
+  form {
+    width: 80%;
+  }
+  .cabin-card {
+    width: 100%;
+    margin: 0;
+  }
+}
